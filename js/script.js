@@ -9,6 +9,7 @@ heading.addEventListener("mouseout", function () {
 });
 
 function showmessage(){
-    let name=document.getElemenetById('name').value;
-    document.getElementByid('message').innerText="Registration Successful! Welcome,";
+    
+    let name=document.getElementById('name').value;
+    document.getElementById('message').innerText="Registration Successful! Welcome, " + name;
 }
