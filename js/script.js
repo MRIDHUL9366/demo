@@ -7,3 +7,8 @@ heading.addEventListener("mouseover", function () {
 heading.addEventListener("mouseout", function () {
     heading.style.color = "black";
 });
+
+function showmessage(){
+    let name=document.getElemenetById('name').value;
+    document.getElementByid('message').innerText="Registration Successful! Welcome,";
+}
