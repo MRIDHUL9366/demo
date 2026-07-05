@@ -1,12 +1,9 @@
-function registerEvent() {
+const heading = document.getElementById("heading");
 
-    let name = document.getElementById("name").value;
+heading.addEventListener("mouseover", function () {
+    heading.style.color = "blue";
+});
 
-    if(name === ""){
-        document.getElementById("message").innerHTML = "Please enter your name.";
-    }else{
-        document.getElementById("message").innerHTML =
-        "Registration Successful! Welcome " + name + ".";
-    }
-
-}
+heading.addEventListener("mouseout", function () {
+    heading.style.color = "black";
+});
